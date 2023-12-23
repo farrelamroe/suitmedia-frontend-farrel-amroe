@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 type Idea = {
   id: number;
@@ -12,11 +12,11 @@ type Props = {
   ideas?: Idea[]; // Use optional chaining to handle undefined
 };
 
-const CardContent: React.FC<Props> = ({ ideas } : any) => {
+const CardContent: React.FC<Props> = ({ ideas }: any) => {
   return (
-    <div className="flex flex-wrap flex-row gap-5 justify-center p-[32px]">
+    <div className="lg:flex lg:flex-wrap lg:flex-row gap-5 justify-center p-[64px] grid grid-cols-1 sm:grid-cols-2">
       {ideas.map((idea: any) => (
-        <div key={idea.id} className="w-[20%] h-72 shadow-md rounded-[8px]">
+        <div key={idea.id} className="lg:max-w-[20%] h-72 shadow-md rounded-[8px] sm:max-w-[200px]">
           <Image
             src={idea.small_image[0].url || idea.medium_image[0].url}
             alt="content"

@@ -45,7 +45,7 @@ export function Navbar() {
         <div className="relative top-[50%] flex h-full translate-y-[-50%] flex-row items-center justify-between px-5 shadow-md ">
           <Link href="/">
             <Image
-              src="https://static.igem.wiki/teams/4914/wiki/logo-short.png"
+              src="/logo.png"
               width={100}
               height={100}
               alt=""
@@ -61,11 +61,11 @@ export function Navbar() {
           </Link>
           <div className="relative z-40 hidden flex-row items-center justify-center gap-x-5 text-xl text-white lg:flex lg:pr-20">
             <Link href="/">
-              <p className="hover:cursor-pointer hover:font-bold">Home</p>
+              <p className="hover:cursor-pointer hover:font-bold">Work</p>
             </Link>
             <div className="group relative z-50 text-sm">
               <button className=" font-poppins text-xl text-white hover:font-bold">
-                <span>Project</span>
+                <span>About</span>
               </button>
               <div className="absolute z-50 hidden text-start group-hover:block ">
                 <div className="absolute  z-50 h-screen shadow-lg">
@@ -96,7 +96,7 @@ export function Navbar() {
             </div>
             <div className="group relative z-50 text-sm">
               <button className=" font-poppins text-xl text-white hover:font-bold">
-                <span>Wet Lab</span>
+                <span>Services</span>
               </button>
               <div className="absolute z-50 hidden text-start group-hover:block">
                 <div className="absolute  z-50 h-screen shadow-lg">
@@ -119,7 +119,7 @@ export function Navbar() {
             </div>
             <div className="group relative z-50 text-sm">
               <button className=" font-poppins text-xl text-white hover:font-bold">
-                <span>Dry Lab</span>
+                <span>Ideas</span>
               </button>
               <div className="absolute z-50 hidden text-start group-hover:block">
                 <div className="absolute  z-50 h-screen shadow-lg">
@@ -133,7 +133,7 @@ export function Navbar() {
             </div>
             <div className="group relative z-50 text-sm">
               <button className=" font-poppins text-xl text-white hover:font-bold">
-                <span>Human Practices</span>
+                <span>Carees</span>
               </button>
               <div className="absolute z-50 hidden text-start group-hover:block">
                 <div className="absolute  z-50 h-screen shadow-lg">
@@ -159,7 +159,7 @@ export function Navbar() {
             </div>
             <div className="group relative z-50 text-sm">
               <button className=" font-poppins text-xl text-white hover:font-bold">
-                <span>Team</span>
+                <span>Contact</span>
               </button>
               <div className="absolute z-50 hidden text-start group-hover:block">
                 <div className="absolute  z-50 h-screen shadow-lg">
@@ -174,23 +174,6 @@ export function Navbar() {
                       <p className="hover:cursor-pointer hover:font-bold">
                         Collaborations
                       </p>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="group relative z-50 text-sm">
-              <button className=" font-poppins text-xl text-white hover:font-bold">
-                <span>Medal</span>
-              </button>
-              <div className="absolute z-50 hidden text-start group-hover:block">
-                <div className="absolute  z-50 h-screen shadow-lg">
-                  <div className="absolute z-50 flex flex-col gap-y-2 rounded-md bg-primary px-3 py-5 text-white shadow-lg">
-                    <Link href="/medal">
-                      <p className="hover:font-bold">Medal</p>
-                    </Link>
-                    <Link href="/awards">
-                      <p className="hover:font-bold">Awards</p>
                     </Link>
                   </div>
                 </div>
@@ -243,17 +226,17 @@ export function Navbar() {
       </div>
 
       <div
-        className={` fixed z-[110] flex h-screen w-screen flex-col items-start justify-start gap-x-5 gap-y-1 overflow-y-hidden bg-primary-100 pt-24 text-xl text-white duration-1000 lg:hidden ${
+        className={` fixed z-[110] flex h-screen w-screen flex-col items-start justify-start gap-x-5 gap-y-1 overflow-y-hidden bg-primary pt-24 text-xl text-white duration-1000 lg:hidden ${
           active ? "max-w-[75vw]" : "max-w-0"
         } ${visible ? "" : "translate-x-[-200%]"}`}>
         <Link href="/">
           <button className=" pb-5 pl-20 font-poppins text-xl text-white hover:cursor-pointer xs:pl-28 sm:pl-36 md:pl-44">
-            <span>Home</span>
+            <span>Work</span>
           </button>
         </Link>
         <div className="group relative">
           <button className=" pb-5 pl-20 font-poppins text-xl text-white xs:pl-28 sm:pl-36 md:pl-44">
-            <span>Project</span>
+            <span>About</span>
           </button>
           <div className="z-10 hidden w-screen group-hover:block">
             <div className="relative z-50 h-full w-full bg-primary shadow-lg">
@@ -284,7 +267,7 @@ export function Navbar() {
         </div>
         <div className="group relative">
           <button className=" whitespace-nowrap pb-5 pl-20 font-poppins text-xl text-white xs:pl-28 sm:pl-36 md:pl-44">
-            <span>Wet Lab</span>
+            <span>Services</span>
           </button>
           <div className="z-10 hidden w-screen group-hover:block">
             <div className="relative z-50 h-full w-full bg-primary shadow-lg">
@@ -307,7 +290,7 @@ export function Navbar() {
         </div>
         <div className="group relative">
           <button className=" whitespace-nowrap pb-5 pl-20 font-poppins text-xl text-white xs:pl-28 sm:pl-36 md:pl-44">
-            <span>Dry Lab</span>
+            <span>Ideas</span>
           </button>
           <div className="z-10 hidden w-screen group-hover:block">
             <div className="relative z-50 h-full w-full bg-primary shadow-lg">
@@ -321,7 +304,7 @@ export function Navbar() {
         </div>
         <div className="group relative">
           <button className="whitespace-nowrap pb-5 pl-20 text-start font-poppins text-xl text-white xs:pl-28 sm:pl-36 md:pl-44">
-            <span>Human Practices</span>
+            <span>Carees</span>
           </button>
           <div className="z-10 hidden w-screen group-hover:block">
             <div className="relative z-50 h-full w-full bg-primary shadow-lg">
@@ -347,7 +330,7 @@ export function Navbar() {
         </div>
         <div className="group relative">
           <button className=" pb-5 pl-20 font-poppins text-xl text-white xs:pl-28 sm:pl-36 md:pl-44">
-            <span>Team</span>
+            <span>About</span>
           </button>
           <div className="z-10 hidden w-screen group-hover:block">
             <div className="relative z-50 h-full w-full bg-primary shadow-lg">
@@ -362,23 +345,6 @@ export function Navbar() {
                   <p className="hover:cursor-pointer hover:font-bold">
                     Collaborations
                   </p>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="group relative">
-          <button className=" pb-5 pl-20 font-poppins text-xl text-white xs:pl-28 sm:pl-36 md:pl-44">
-            <span>Medal</span>
-          </button>
-          <div className="z-10 hidden w-screen group-hover:block">
-            <div className="relative z-50 h-full w-full bg-primary shadow-lg">
-              <div className="relative z-50 flex flex-col gap-y-2 py-5 pl-20 xs:pl-28 sm:pl-36 md:pl-44">
-                <Link href="/medal">
-                  <p>Medal</p>
-                </Link>
-                <Link href="/awards">
-                  <p>Awards</p>
                 </Link>
               </div>
             </div>
